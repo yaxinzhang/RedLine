@@ -1,0 +1,93 @@
+/*div over body alert*/
+/*body{ background:#942d4a;*/
+
+.over_div { background:url(../../images/over_body.png) ;display:block;position:fixed;_position:absolute;top:0; left:0; overflow:hidden; z-index:10000; display:none;width:100%;
+height:100%;}
+.alertbox{display:none; }
+.box_s ,.box_l{ width:494px; position:fixed;_position:absolute;z-index: 10001;}
+.box_l { width:698px;}
+
+.alertbox_top,.alertbox_bottom,.alertbox button ,.alertbox a.close{background:url(../../images/alertbox.png) no-repeat; float:left;}
+.box_s .alertbox_top,.login .alertbox_top{background-position:0 -82px;height:36px; padding-top:15px; text-indent:30px; width:700px;}
+.box_s .alertbox_content ,.login .alertbox_content {background:url(../../images/alertbox_content_long.png) repeat-y left; padding:10px 30px; width:640px;float:left;}
+.box_s iframe{width:420px;}
+.box_s .alertbox_bottom,.login .alertbox_bottom{background-position: 0 -142px ;height:22px; width:700px; position:relative; z-index:-1;}
+.box_l .alertbox_top{background-position: 0 -80px;height:36px; padding-top:18px; text-indent:30px; width:698px;}
+.box_l .alertbox_content {background:url(../../images/alertbox_content_long.png) repeat-y left; padding:10px 30px; width:638px; float:left;}
+.box_l .alertbox_bottom{background-position: 0 -148px ;height:20px; width:698px; position:relative; z-index:-1; float:left;}
+
+.alertbox .editor{margin:0;border:1px solid #ccc; height:80px;}
+
+.alertbox div.hr { height:3px; background:#c67b90; margin:5px 0 0 30px; font-size:1px;border:none; padding:0; float:left; display:inline;}
+.alertbox .button { margin-top:5px; width:auto; position:relative; height:40px;}
+.alertbox button ,.alertbox a.close{ border:none;color:#B0526D; height:35px; font-size:14px; cursor:pointer; }
+.over_div .iframe a.close { margin-right:0px;}
+.alertbox button.reply{ background-position:-510px 0 ; width:80px;float:right; line-height:30px; height:30px;}
+.alertbox h3.title { color:#555;font-size:18px; line-height:30px; display:block; height:30px; width:400px; overflow:hidden;float:left; margin:0; text-align:left; font-family:å¾®è½¯é›…é»‘,arial;}
+.alertbox span.discription{ color:#B0526D;font-size:14px; line-height:25px; display:block;}
+.alertbox img.face{ float:left; display:block; cursor:pointer; border:2px solid #fff;}
+
+.alertbox a.close{background-position:-604px 0 ; text-indent:-9999px; width:32px; height:28px; float:right; margin-right:20px; cursor:pointer;}
+.alertbox a.close:hover{background-position:-649px 0;}
+
+.facebox{ width:252px; height:175px; border:#868686 2px solid; background:#fff; position:absolute;z-index:30005; top:0px; left:35px; display:none;padding:3px;}
+.facebox a.close_facebox,.facebox a.imghover{ padding:0;position:absolute;top:-18px;right:-2px; display:block; height:16px; line-height:16px; width:16px; font-size:12px; color:#B0526D; text-align:center; cursor:pointer; background:#f8eff2; border:2px solid #B0526D; border-bottom:none; z-index:30009; text-decoration:none;}
+.facebox a.close_facebox:hover{ background:#999;color:#fff; border-color:#999;}
+.facebox a.imghover{top:10px;left:-7px;height:11px; width:7px; background:url(../../images/alertbox.png) no-repeat -615px -60px; border:none; font-size:1px;}
+.facebox a.close_facebox{ position:absolute;top:-2px;right:-18px; display:block; height:16px; line-height:16px; width:16px; font-size:12px; color:#030303; text-align:center; cursor:pointer; background:#f1f1f1; border:2px solid #868686; border-left:none; z-index:30009; text-decoration:none;}
+.facebox span{width:34px; display:block; height:34px; float:left; margin:1px 1px 0 0; border:1px solid #ddd; border-left:0; border-top:0;}
+.facebox .emote_tab li{float: left;margin: 0 2px 5px 0;width: auto;clear:none;padding:0 0}
+.facebox .emote_tab ul{border-top: 1px solid #999;list-style: none;padding: 0 10px;margin: 0;font-size: 12px;float: left;width: 232px;margin-top: 5px;}
+.facebox .emote_tab a{background: #fff;display: block;padding: 0 8px;text-decoration: none;color: #000;line-height: 20px;}
+.facebox .emote_tab .currtab{cursor: text;border: 1px solid #999;border-top:none;position:relative;bottom:1px;}
+.facebox img{width:32px}
+
+.pic{ border:5px solid #777; background:#000;position:fixed;_position:absolute;width:940px;}
+.pic a.close{ position:absolute; right:-18px; top:-18px; margin-right:0;background-position:-649px -32px; height:32px; z-index:10002; }
+.pic a.close:hover{ background-position:-649px -32px;}
+.pic .alertbox_content{ background:none; padding:0; margin:0; background:#f2f2f2; overflow:hidden;}
+.pic span.discription{ display:block; height:25px;width:200px;text-indent:4px; color:#555;}
+.pic span.discription a{color:#06c;}
+.pic .replyform{position:static;}
+.pic button.reply{ float:right; background-position:-510px -40px; color:#333;}
+.pic input{ height:25px;background: url(../../images/dashboard/input_bg.png) repeat-x top #FFF;border: 1px solid #BBB;color: #222;font: 14px å¾®è½¯é›…é»‘,Arial,Helvetica,sans-serif;padding:3px 0 0 7px; margin-left:4px; float:left}
+.pic .alertbox_img{}
+.pic .content{background:#ccc;color:#444;height:25px; line-height:25px;text-indent:10px;}
+.pic .alertbox_img .showimg{ display:none;}
+.pic .alertbox_img img.current_img{ display:block; _zoom:1}
+.pic .over_img{ position:absolute;  top:0; left:0;display:block;}
+.pic .over_area{  overflow:hidden; display:block; background:none; position:absolute;top:0;left:0;}
+.pic .area_left { float:left; display:inline-table; vertical-align:middle; }
+.pic .area_right {float:right; display:inline-table; vertical-align:middle;}
+.pic .left_hand{ float:left; background:url(../../images/left_hand.png) left center no-repeat; background-image:url(../../images/left_handie.png)\9; }
+.pic .right_hand{ float:right;background:url(../../images/right_hand.png) right center no-repeat;background-image:url(../../images/right_handie.png)\9;}
+.pic .left_hand,.pic .right_hand { opacity:0.3;cursor:pointer;_position:static;}
+.pic .left_hand:hover,.pic .right_hand:hover {opacity:0.8;}
+.pic .left_hand:hover{background-image:url(../../images/left_hand.png); background-image:url(../../images/left_handiehover.png)\9 ;} 
+.pic .right_hand:hover{background-image:url(../../images/right_hand.png);background-image:url(../../images/right_handiehover.png)\9;} 
+
+.pic .img_comments{ float:right; width:195px;}
+.scroll {overflow:hidden ; overflow-y:auto;}
+
+#op_notice_ok,#op_notice_err{ width:70px; margin-right:5px; float:right; margin-top:0; text-align:center; text-indent:0;}
+
+.login{width:700px;height:300px;position:fixed;_position:absolute;}
+.login .loginframe{width:640px;overflow:hidden;height:150px;}
+
+.iframe{border:5px solid #fff; background:#fff;position:fixed;_position:absolute;}
+.preview { overflow-x: hidden; overflow-y:auto;}
+.alertbox_content .radio span{display:block; height:25px; line-height:25px; cursor:pointer;}
+.alertbox div.pay {height:50px;padding:10px 0 0 0;float:left;}
+.alertbox .payforoil,.alertbox .duihuan,.alertbox .payforvip,.alertbox .duihuan{text-indent:-9999px;background:url(../../images/dashboard/pay.png) no-repeat; border:none; width:136px; height:44px; font-family:"å¾®è½¯é›…é»‘",Arial; line-height:44px; display:block; float:left; color:#fff; cursor:pointer; } 
+.alertbox .payforoil{background-position:0 -92px}
+.alertbox .payforvip{background-position:0 -46px}
+.alertbox .duihuan{background-position:0 -138px}
+.alertbox .img_preview{float:right;display: block;border:3px solid #ddd; border-radius: 5px;padding:1px;background:#aaa}
+.alertbox .radio {float:left;height:100px;width:380px;}
+.alertbox_content .radio span b{color:#f60;font-size:14px;}
+.alertbox_content .radio span{color:#777;}
+.option_text{border:3px solid #d89050; background:#ffd481;width:120px;height:90px;position:fixed;z-index:9999; _position:absolute;}
+.option_text span {text-align:center;width:120px;display:block;height:90px;line-height:90px;font-size:14px;}
+.bh300{ height:300px;}
+.bh200{ height:200px;}
+.bh150{ height:150px;}

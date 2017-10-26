@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <!-- namespace 地址为借口
+        id为方法名
+        resultType为实体路径
+         -->
+<mapper namespace="tyyb.dao.BlogDao">
+    <select id="getBlogByUserId" parameterType="hashMap" resultType="tyyb.entity.Blog">
+        select * from blog WHERE user_id = #{userId}
+    </select>
+    
+    <select id="addBlog" parameterType="tyyb.entity.Blog">
+        INSERT INTO blog VALUES (null,#{userId},#{title},#{content},null,null,null)
+    </select>
+    
+    <select id="delBlog" parameterType="Integer">
+       DELETE FROM blog WHERE id=#{id}
+    </select>
+    <select id="updateBlog" parameterType="tyyb.entity.Blog">
+       UPDATE blog SET title =#{title} ,content=#{content} where id=#{id}
+    </select>
+    <select id="getBlogByBlogId" parameterType="Integer" resultType="tyyb.entity.Blog">
+       SELECT * FROM blog where id =#{id}
+       
+    </select>
+    <select id="getBlogIdCount" parameterType="Integer" resultType="Integer">
+       SELECT COUNT(id) FROM blog WHERE user_id =#{userId}
+    </select>
+    </mapper>

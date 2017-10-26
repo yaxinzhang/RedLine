@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        <!-- namespace 地址为借口
+        id为方法名
+        resultType为实体路径
+         -->
+<mapper namespace="tyyb.dao.UserDao">
+    <select id="allUser" resultType="tyyb.entity.User">
+        select * from user 
+    </select>
+    <select id="addUser" parameterType="tyyb.entity.User"  resultType="tyyb.entity.User">
+            
+           insert into user values(null,#{name},#{password},#{nickname},#{e_mail},#{str},null)
+    
+    </select>
+    <select id="findUserByName" parameterType="tyyb.entity.User"  resultType="tyyb.entity.User">
+           select * from user where name = #{name}
+    </select>
+
+    <select id="login" parameterType="tyyb.entity.User"  resultType="tyyb.entity.User"> 
+           select *from user where name =#{name} and password=#{password}
+    </select>
+    <select id="getNameById" parameterType="Integer"  resultType="String"> 
+			SELECT NAME FROM user where id =#{userId}
+    </select>
+    
+</mapper>
